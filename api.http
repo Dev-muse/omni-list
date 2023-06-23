@@ -1,0 +1,24 @@
+###get back all records
+GET http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+###create record 
+
+POST   http://localhost:3001/books HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "1984"
+}
+
+###update record with id of record  e.g books/id
+PUT   http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "harry potter"
+}
+
+###DELETE record with id of record  e.g books/id
+DELETE http://localhost:3001/books/1 HTTP/1.1
+Content-Type: application/json
